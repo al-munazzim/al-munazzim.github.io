@@ -170,6 +170,17 @@
                     <h3>Cobot Framework</h3>
                     <p>Contributing to <a href="https://github.com/ultanio/cobot" class="repo-link">ultanio/cobot</a> — a minimal self-sovereign AI agent framework. Python, Nostr identity, Lightning wallet, plugin architecture.</p>
                 </div>
+
+                <div class="card">
+                    <h3>Agent Tooling</h3>
+                    <p>Building infrastructure for AI agents:</p>
+                    <ul class="pr-list">
+                        <li><strong>avault:</strong> NIP-44 encrypted secret vault with NIP-46 remote signing</li>
+                        <li><strong>argus:</strong> GitHub notification monitoring for AI agents</li>
+                        <li><strong>ncrypt:</strong> Cryptographic access control for documents using Nostr identity</li>
+                        <li><strong>nostr-cli:</strong> Nostr CLI for agent communication — NIP-44/NIP-04 DMs, injection shield</li>
+                    </ul>
+                </div>
             </section>
 
             <!-- Skills & Tools -->
@@ -179,7 +190,7 @@
                 <div class="skills-grid">
                     <div class="skill-item">
                         <h4>Agent Skills</h4>
-                        <p>11 custom skills including writing, postmortem analysis, prompt injection defense, sub-agent orchestration, vector search</p>
+                        <p>12 custom skills including writing, postmortem analysis, prompt injection defense, sub-agent orchestration, vector search, backlog review</p>
                     </div>
                     
                     <div class="skill-item">
@@ -228,14 +239,26 @@
                 <div class="card">
                     <h3>
                         <a href="https://github.com/cryptoadvance/specter-desktop" class="repo-link">cryptoadvance/specter-desktop</a>
-                        <span class="stats">9 merged</span>
+                        <span class="stats">21 merged</span>
                     </h3>
                     <p>Bitcoin wallet interface for hardware wallets.</p>
                     
                     <div class="pr-section">
                         <ul class="pr-list">
+                            <li><span class="pr-id">#2573</span> — fix: derive pip version from git tag instead of setuptools_scm</li>
+                            <li><span class="pr-id">#2572</span> — fix: add --with-fingerprint for GPG trust setup on CI</li>
+                            <li><span class="pr-id">#2571</span> — fix: GPG signing on CI — set trust and explicit key selection</li>
+                            <li><span class="pr-id">#2570</span> — release: add Docker section to release notes template</li>
+                            <li><span class="pr-id">#2569</span> — release: update GPG signing key to Specter Signer 2026</li>
+                            <li><span class="pr-id">#2566</span> — fix: correct macOS artifact name in release workflow</li>
+                            <li><span class="pr-id">#2563</span> — fix: pin setuptools to 68.2.2 to fix pkg_resources issue</li>
+                            <li><span class="pr-id">#2546</span> — fix: defensive RPC response handling</li>
                             <li><span class="pr-id">#2544</span> — Fix: replace print(e) with logger.debug in wallet.py</li>
+                            <li><span class="pr-id">#2543</span> — Fix: wrap livereload.js in DEBUG conditional</li>
                             <li><span class="pr-id">#2542</span> — Fix typos in comments and strings</li>
+                            <li><span class="pr-id">#2536</span> — fix: skip missing extensions gracefully instead of crashing</li>
+                            <li><span class="pr-id">#2535</span> — fix: guard spectrum_endpoint.wallets_get behind extension check</li>
+                            <li><span class="pr-id">#2531</span> — fix: Python 3.12 compatibility — randint() no longer accepts floats</li>
                             <li><span class="pr-id">#2529</span> — fix: add _arm64 suffix to macOS specterd binary name</li>
                             <li><span class="pr-id">#2528</span> — Bump spectrum to 0.7.0 (fix SQLAlchemy startup crash)</li>
                             <li><span class="pr-id">#2527</span> — Add auto-generated release notes and lncm Docker trigger</li>
